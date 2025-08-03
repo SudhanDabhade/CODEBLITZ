@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Energy Prediction - CODE BLITZ</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="project-title">Solar Energy Generation Predictor</h1>
+            <div class="team-dropdown-container">
+                <h2 class="team-name" id="team-name-btn">CODE BLITZ</h2>
+                <div class="dropdown-menu" id="team-dropdown">
+                    <h4>Our Team</h4>
+                    <ul class="member-list">
+                        <li>
+                            <img src="https://placehold.co/50x50/4CAF50/FFFFFF?text=J" alt="Jaychandra's photo"
+                                class="member-photo">
+                            <div class="member-info">
+                                <h5>Jaychandra Vandanapu</h5>
+                                <p>Information Technology</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="https://placehold.co/50x50/4CAF50/FFFFFF?text=S" alt="Sudhan's photo"
+                                class="member-photo">
+                            <div class="member-info">
+                                <h5>Sudhan Dhabade</h5>
+                                <p>AIDS (Artificial Intelligence & Data Science)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="https://placehold.co/50x50/4CAF50/FFFFFF?text=O" alt="Omraj's photo"
+                                class="member-photo">
+                            <div class="member-info">
+                                <h5>Omraj Holkar</h5>
+                                <p>Information Technology</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="https://placehold.co/50x50/4CAF50/FFFFFF?text=A" alt="Aryan's photo"
+                                class="member-photo">
+                            <div class="member-info">
+                                <h5>Aryan Shete</h5>
+                                <p>Computer Engineering</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="hero-section">
+            <img src="https://cdn.britannica.com/94/192794-050-3F3F3DDD/panels-electricity-order-sunlight.jpg"
+                alt="Solar panels at sunset" class="hero-image">
+            <div class="overlay"></div>
+            <div class="hero-text">
+                <h2>Predict the power of the sun.</h2>
+                <p>Harness the power of AI to forecast solar energy output based on key weather data.</p>
+            </div>
+        </div>
+
+        <div class="prediction-card">
+            <div class="tabs">
+                <button class="tab-button active" data-tab="input">Input Data</button>
+                <button class="tab-button" data-tab="result">Prediction Result</button>
+            </div>
+
+            <div id="input" class="tab-content active">
+                <h3>Enter Weather Data</h3>
+                <form id="prediction-form">
+                    <div class="input-group">
+                        <label for="air_temperature">Air Temperature (°C)</label>
+                        <input type="number" id="air_temperature" name="air_temperature" placeholder="e.g., 25"
+                            required>
+                    </div>
+                    <div class="input-group">
+                        <label for="relative_air_humidity">Relative Air Humidity (%)</label>
+                        <input type="number" id="relative_air_humidity" name="relative_air_humidity"
+                            placeholder="e.g., 60" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="wind_speed">Wind Speed (km/h)</label>
+                        <input type="number" id="wind_speed" name="wind_speed" placeholder="e.g., 15" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="sunshine">Sunshine (hours)</label>
+                        <input type="number" id="sunshine" name="sunshine" placeholder="e.g., 8" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="air_pressure">Air Pressure (hPa)</label>
+                        <input type="number" id="air_pressure" name="air_pressure" placeholder="e.g., 1013" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="radiation">Solar Radiation (W/m²)</label>
+                        <input type="number" id="radiation" name="radiation" placeholder="e.g., 500" required>
+                    </div>
+                    <button type="submit" id="predict-button">Predict Generation</button>
+                </form>
+            </div>
+
+            <div id="result" class="tab-content">
+                <h3>Prediction Result</h3>
+                <div class="result-display">
+                    <p>Predicted Solar Energy Production:</p>
+                    <p class="prediction-value">--- kW</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CODE BLITZ. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
