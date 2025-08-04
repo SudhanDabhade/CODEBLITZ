@@ -10,4 +10,4 @@ accurate forecasting..
 **Google Colab**
 
 Access the project notebook using the link below:
-[Google Colab Notebook](https://colab.research.google.com/drive/1fW4iIrIzyeSvs3QDf4C0n3FOZvCV1hAK?usp=sharing)
+[Google Colab Notebook](https://colab.research.google.com/drive/1bx6Aq4h-JiFbxZy-LWPpLVM-jDDca7Yo?usp=sharing )
