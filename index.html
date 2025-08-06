@@ -19,10 +19,10 @@
                     <h4>Our Team</h4>
                     <ul class="member-list">
                         <li>
-                            <img src="https://placehold.co/50x50/4CAF50/FFFFFF?text=J" alt="Jaychandra's photo"
+                            <img src="https://placehold.co/50x50/4CAF50/FFFFFF?text=J" alt="Jayachandra's photo"
                                 class="member-photo">
                             <div class="member-info">
-                                <h5>Jaychandra Vandanapu</h5>
+                                <h5>Jayachandra Vandanapu</h5>
                                 <p>Information Technology</p>
                             </div>
                         </li>
@@ -30,8 +30,8 @@
                             <img src="https://placehold.co/50x50/4CAF50/FFFFFF?text=S" alt="Sudhan's photo"
                                 class="member-photo">
                             <div class="member-info">
-                                <h5>Sudhan Dhabade</h5>
-                                <p>AIDS (Artificial Intelligence & Data Science)</p>
+                                <h5>Sudhan Dabhade</h5>
+                                <p>Artificial Intelligence & Data Science</p>
                             </div>
                         </li>
                         <li>
@@ -74,34 +74,41 @@
             </div>
 
             <div id="input" class="tab-content active">
-                <h3>Enter Weather Data</h3>
+                <h3>Enter Data</h3>
                 <form id="prediction-form">
+
                     <div class="input-group">
-                        <label for="air_temperature">Air Temperature (°C)</label>
-                        <input type="number" id="air_temperature" name="air_temperature" placeholder="e.g., 25"
-                            required>
+                        <label for="city-input">Enter City:</label>
+
+                        <input type="text" id="city-input" name="city" placeholder="choose " list="citys">
+
+
+                        <datalist id="citys">
+                            <option value="Mumbai"></option>
+                            <option value="Delhi"></option>
+                            <option value="Bengluru"></option>
+                            <option value="Chennai"></option>
+                            <option value="Hyderabad"></option>
+                            <option value="Ahmedabad"></option>
+                            <option value="Kolkata"></option>
+                            <option value="Pune"></option>
+                            <option value="Jaipur"></option>
+                            <option value="Lucknow"></option>
+
+                        </datalist>
+
+
                     </div>
                     <div class="input-group">
-                        <label for="relative_air_humidity">Relative Air Humidity (%)</label>
-                        <input type="number" id="relative_air_humidity" name="relative_air_humidity"
-                            placeholder="e.g., 60" required>
+                        <label for="Date">Enter Date: </label>
+                        <input type="number" id="Date" name="Date" placeholder="YYYY-MM-DD" required>
                     </div>
                     <div class="input-group">
-                        <label for="wind_speed">Wind Speed (km/h)</label>
-                        <input type="number" id="wind_speed" name="wind_speed" placeholder="e.g., 15" required>
+                        <label for="Time">Enter Time: </label>
+                        <input type="number" id="Time" name="Time" placeholder="HH:MM:SS" required>
                     </div>
-                    <div class="input-group">
-                        <label for="sunshine">Sunshine (hours)</label>
-                        <input type="number" id="sunshine" name="sunshine" placeholder="e.g., 8" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="air_pressure">Air Pressure (hPa)</label>
-                        <input type="number" id="air_pressure" name="air_pressure" placeholder="e.g., 1013" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="radiation">Solar Radiation (W/m²)</label>
-                        <input type="number" id="radiation" name="radiation" placeholder="e.g., 500" required>
-                    </div>
+                    
+                    
                     <button type="submit" id="predict-button">Predict Generation</button>
                 </form>
             </div>
@@ -110,7 +117,7 @@
                 <h3>Prediction Result</h3>
                 <div class="result-display">
                     <p>Predicted Solar Energy Production:</p>
-                    <p class="prediction-value">--- kW</p>
+                    <p class="prediction-value">--- MW</p>
                 </div>
             </div>
         </div>
